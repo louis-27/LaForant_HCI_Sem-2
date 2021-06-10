@@ -10,7 +10,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 a {
@@ -46,7 +46,7 @@ nav {
 }
 
 .logo {
-    width: 250px;
+    width: 200px;
 }
 
 .main-list {
@@ -62,21 +62,47 @@ nav {
     margin-right: 40px;
 }
 
-.nav-toggle {
-    color: white;
+.dropdown {
+    color: #fff;
 }
 
 .arrow-down {
     width: 14px;
 }
 
-.main-list .nav-links a, .nav-toggle > div {
+#dropdown-hover {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown .dropdown-menu {
+   display: none;
+   position: absolute;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-menu > a {
     display: inline-block;
-    padding: 40px 25px;
+    width: 100%;
+    background-color: #000;
+    padding: 15px 25px;
+}
+
+.dropdown:hover .dropdown-menu > a:hover {
+    background-color: #6d6d6d;
+}
+
+.main-list .nav-links a, .dropdown > #dropdown-hover {
+    display: inline-block;
+    padding: 35px 25px;
     border-bottom: solid 3px #000;
 }
 
-.main-list .nav-links a:hover, .nav-toggle > div:hover {
+.main-list .nav-links > a:hover, .dropdown > #dropdown-hover:hover {
     border-bottom-color: red;
 }
 
