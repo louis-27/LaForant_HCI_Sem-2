@@ -2,7 +2,6 @@
     /* Colors */
     --laforant-red: #ef233c;
     --laforant-black: #0b090a;
-    --laforant-light: #ebeaea;
 
     /* Font size */
     --p-size: 16px;
@@ -22,7 +21,6 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-size: 13px;
-    background-color: var(--laforant-light);
 }
 
 a {
@@ -102,7 +100,6 @@ nav {
     width: 100%;
     background-color: var(--laforant-black);
     padding: 15px 25px;
-    border: none;
 }
 
 .dropdown:hover .dropdown-menu > a:hover {
@@ -127,172 +124,6 @@ nav {
 .pre-register-btn a:hover {
     background-color: var(--laforant-red);
     border-color: var(--laforant-red);
-}
-
-/* Hero */
-.hero {
-    background-image: url('../img/hero-bg_maxresdefault.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-}
-
-.hero-cont {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.cont-elements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hero .logo {
-    width: 55vw;
-}
-
-.hero-text {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20pt;
-}
-
-.hero-btn {
-    text-transform: uppercase;
-    font-size: 1.2em;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 35px;
-    padding: 15px 30px;
-    background-color: var(--laforant-black);
-    border: solid 3px var(--laforant-red);
-}
-
-.hero-btn:hover {
-    background-color: var(--laforant-red);
-}
-
-/* Introduction */
-.intro {
-    margin: 80px auto;
-}
-
-.heading-text {
-    font-weight: 900;
-    font-size: 80px;
-    text-transform: uppercase;
-}
-
-.intro-desc > h2, .intro-desc > p {
-    width: 50%;
-}
-
-.intro-desc > h1 {
-    text-align: center;
-    width: 80%;
-    margin: 60px auto 15px;
-    text-align: center;
-}
-
-.intro-desc > h2 {
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    margin: 30px auto 15px;
-    text-transform: uppercase;
-}
-
-.intro-desc > p {
-    font-size: var(--p-size);
-    text-align: center;
-    line-height: 1.8;
-    margin: 30px auto 60px;
-}
-
-/* Agents */
-.agents {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    background-color: #DB4949;
-}
-
-.agents-background {
-    display: flex;
-    justify-content: center;
-    padding: 15% 20%;
-    align-items: center;
-    background-image: url('../img/agents-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.check-agents-btn {
-    display: inline-block;
-    padding: 25px 50px;
-    background-color: rgba(255, 255, 255, 0.80);
-    background-size: cover;
-    color: black;
-    font-weight: 500;
-    font-size: large;
-    align-self: center;
-}
-
-.check-agents-btn:hover {
-    background-color: #fff;
-}
-
-/* Maps */
-.maps {
-    background-image: url('../img/icebox-map.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    justify-items: flex-start;
-}
-
-.map-description {
-    width: 650px;
-    height: 100%;
-    box-shadow: inset 650px 0 80px 10px var(--laforant-light);
-    padding: 2em 0 2em 5%;
-    font-size: large;
-    display: flex;
-    flex-direction: column;
-}
-
-.map-description h1 {
-    margin-top: 0.8em;
-    margin-bottom: 25px;
-}
-
-.map-description h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.map-description p {
-    width: 60%;
-    font-weight: 250;
-    font-size: var(--p-size);
-}
-
-.view-maps-btn {
-    display: inline-block;
-    padding: 25px 50px;
-    background-color: var(--laforant-red);
-    font-weight: 500;
-    margin-top: 60px;
-    align-self: flex-start;
-}
-
-.view-maps-btn:hover {
-    background-color: #fd334a;
 }
 
 /* Footer */
