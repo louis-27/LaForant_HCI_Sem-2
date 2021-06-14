@@ -57,21 +57,32 @@ nav {
     font-weight: 600;
 }
 
+.hamburger-logo {
+    display: none;
+}
+
+.hamburger-logo > svg {
+    fill: #fff;
+}
+
 .logo {
     width: 200px;
 }
 
 .main-list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-left: 0;
     margin: 0;
 }
 
-.main-list > .logo-container {
+.logo-container {
     padding-left: 0;
     margin-right: 40px;
+}
+
+#nav-menu {
+    display: flex;
 }
 
 .dropdown {
@@ -219,7 +230,8 @@ nav {
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-color: #DB4949;
+    /* background-color: #DB4949; */
+    background-color: var(--laforant-red);
 }
 
 .agents-background {
@@ -305,7 +317,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 3em 0 5em; */
 }
 
 .footer-links {
@@ -362,4 +373,47 @@ footer {
 
 .discord-icon:hover svg {
     fill: #4C6EF5;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+    /* Navigation */
+    .hamburger-logo {
+        display: flex;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    .logo-container {
+        margin-right: 0;
+    }
+
+    .logo {
+        margin: 20px auto;
+    }
+
+    .pre-register-btn a {
+        padding: 10px 15px;
+        /* font-size: 0.8em; */
+    }
+
+    /* Footer */
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        padding: 0;
+    }
+
+    .socmed {
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    
 }

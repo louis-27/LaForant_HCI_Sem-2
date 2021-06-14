@@ -126,6 +126,32 @@ nav {
     border-color: var(--laforant-red);
 }
 
+/* Maps */
+.maps {
+    background-color: var(--laforant-red);
+    margin-top: 88px;
+}
+
+.maps-slider{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.maps-desc{
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: end;
+    color: rgb(231, 231, 231);   
+    font-size: large;
+}
+
+.map-image {
+    width: 1530px;
+    height: 662px;
+}
+
 /* Footer */
 footer {
     background: var(--laforant-black);
