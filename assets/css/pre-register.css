@@ -127,6 +127,9 @@ nav {
     border-color: var(--laforant-red);
 }
 
+/* Pre-Register */
+
+
 /* Footer */
 footer {
     background: var(--laforant-black);
@@ -137,7 +140,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 3em 0 5em; */
 }
 
 .footer-links {
