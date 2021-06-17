@@ -128,7 +128,57 @@ nav {
 }
 
 /* Pre-Register */
+.pre-register {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    /* background-color: aqua; */
+}
 
+.pre-register > div {
+    /* width: 50%; */
+    width: 500px;
+    margin: auto;
+    /* background-color: grey; */
+    /* opacity: 70%; */
+}
+
+.error-msg {
+    color: #e74c3c;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.input-section input, .input-section select {
+    display: block;
+    width: 100%;
+    /* font-size: 1; */
+    padding: 10px;
+    outline: none;
+    border: 2px solid #bdbdbd;
+    border-radius: 10px;
+    /* border: none; */
+}
+
+.input-section.success input {
+    border-color: #00ff00;
+}
+
+.input-section.error input, .input-section.error select {
+    border-color: #e74c3c;
+}
+
+.input-section.error .error-msg {
+    visibility: visible;
+}
 
 /* Footer */
 footer {

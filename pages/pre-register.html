@@ -41,23 +41,43 @@
     <!-- Pre-register -->
     <section class="pre-register">
         <div>
-            <form action="" method="POST">
-                <div>
-                    <label for="">Full Name</label>
-                </div>
-                <div>
+            <h1>Pre-Register Now</h1>
+            <form id="form" action="" method="POST">
+                <div class="input-section">
                     <label for="">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Type here">
+                    <span class="error-msg">Error message</span>
                 </div>
-                <div>
+                <div class="input-section">
+                    <label for="">Email</label>
+                    <input type="text" name="username" id="email">
+                    <span class="error-msg">Error message</span>
+                </div>
+                <div class="input-section">
                     <label for="">Password</label>
+                    <input type="password" name="password" id="password">
+                    <span class="error-msg">Error message</span>
+
                 </div>
-                <div>
+                <div class="input-section">
+                    <label for="">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                    <span class="error-msg">Error message</span>
+                </div>
+                <div class="input-section">
                     <label for="">Gender</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="">Female</label>
+                    <span class="error-msg">Error message</span>
                 </div>
-                <div>
+                <div class="input-section">
                     <label for="">Date of Birth</label>
+                    <input type="date" name="dob" id="dob">
+                    <span class="error-msg">Error message</span>
                 </div>
-                <div>
+                <div class="input-section">
                     <label for="">Nationality</label>
                     <select id="country" name="country" class="form-control">
                         <option value="Afghanistan">Afghanistan</option>
@@ -305,16 +325,19 @@
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
+                    <span class="error-msg">Error message</span>
                 </div>
-                <div>
-                    <label for="">Email</label>
-                </div>
-                <div>
+                <div class="input-section">
+                    <input type="checkbox" name="" id="agreement">
                     <label for="">I agree to BLABLABLABLABLABLABLA</label>
+                    <span class="error-msg">Error message</span>
                 </div>
 
-                <input type="submit" name="" id="" value="Submit">
+                <button>Submit</button>
+                <!-- <button type="submit">Submit</button> -->
             </form>
+
+            <!-- <button type="submit">Submit</button> -->
         </div>
     </section>
 

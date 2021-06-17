@@ -126,6 +126,53 @@ nav {
     border-color: var(--laforant-red);
 }
 
+/* Spec Req */
+.spec-req{
+    height: 80vh;
+    margin-top: 88px;
+}
+
+#spec-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.specidentifier{
+    min-width: 100px;
+    min-height: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: #303030;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 -9px;
+    padding: 0 0 0 20px;
+}
+
+.specmin{
+    min-width: 100px;
+    min-height: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: #303030;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 -9px;
+    padding: 0 20px 0 20px;
+}
+
+.specminText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Footer */
 footer {
     background: var(--laforant-black);

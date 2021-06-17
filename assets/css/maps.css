@@ -147,9 +147,16 @@ nav {
     font-size: large;
 }
 
-.map-image {
-    width: 1530px;
-    height: 662px;
+i{
+    margin: 0 20px;
+    color: white;
+    font-size: 300%;
+}
+
+.maps-image {
+    width: 1063px;
+    height: 609px;
+    background-color: rgb(236, 232, 225);
 }
 
 /* Footer */

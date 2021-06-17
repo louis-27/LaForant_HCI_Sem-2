@@ -54,3 +54,81 @@ $(function () {
     })
 
 })
+
+// // Form validation
+// let validate = () => {
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const passwordConfirmation = document.getElementById('confirm-password');
+const genderM = document.getElementById('male');
+const genderF = document.getElementById('female');
+const dob = document.getElementById('dob');
+const nationality = document.getElementById('country');
+const agreement = document.getElementById('agreement');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+})
+
+let validateInputs = () => {
+    const usernameValue = username.value;
+    const emailValue = email.value;
+    const passwordValue = password.value;
+    const passwordConfirmationValue = passwordConfirmation.value;
+
+    // Username validation
+    if (usernameValue === "") {
+        setError(username, "Username cannot be empty");
+    } else if (usernameValue.length < 3) {
+        setError(username, "Username must contain 3 or more characters");
+    } else {
+        setSuccess(username);
+    }
+
+    // Email validation
+    if (emailValue === "") {
+        setError(email, "Email cannot be empty");
+    } else {
+
+    }
+
+    // Password validation
+    if (passwordValue) {
+
+    }
+    // Password confirmation validation
+    if (passwordConfirmationValue === passwordValue) {
+        setSuccess(passwordConfirmation);
+    } else {
+        setError(passwordConfirmation, "Confirmation password must be identical with the password above");
+    }
+
+
+
+    // Agreement
+    if (!agreement.checked) {
+
+    }
+}
+// }
+
+let isEmail = (email) => {
+
+}
+
+let setError = (input, message) => {
+    const inpSection = input.parentElement;
+    const errorMsg = inpSection.getElementsByClassName('error-msg');
+
+    inpSection.className = 'input-section error';
+    errorMsg.innerText = message;
+}
+
+let setSuccess = (input) => {
+    const inpSection = input.parentElement;
+    inpSection.className = 'input-section success';
+}
