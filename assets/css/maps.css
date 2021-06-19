@@ -1,11 +1,9 @@
 /* Maps section */
 .maps {
-    margin-top: 100px;
-
     position: relative;
 }
 
-.maps-cont {
+.slide-cont {
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -34,7 +32,7 @@
 #arrow-left {
     left: 10px;
 
-    z-index: 999;
+    z-index: 99;
 }
 
 #arrow-right {
@@ -56,27 +54,27 @@
 
 
 /* Maps image */
-.maps-cont:nth-of-type(1) {
-    background-image: url('https://static.playoverwatch.com/img/pages/maps/images/kanezaka.jpg');
+.slide-cont:nth-of-type(1) {
+    background-image: url('../img/maps/maps_1_apexLegends-kingsCanyon.jpg');
 }
 
-.maps-cont:nth-of-type(2) {
-    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltde02911a015d7ef9/5f80d2851f5f6d4173b4e49d/Icebox_transparentbg_for_Web.png');
+.slide-cont:nth-of-type(2) {
+    background-image: url('../img/maps/maps_3_overwatch-kanezaka.jpeg');
 }
 
-.maps-cont:nth-of-type(3) {
-    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8538036a309525ae/5ebc470bfd85ad7411ce6b50/bind-featured.png');
+.slide-cont:nth-of-type(3) {
+    background-image: url('../img/maps/maps_4_overwatch-volskayaIndustries.jpeg');
 }
 
-.maps-cont:nth-of-type(4) {
-    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8afb5b8145f5e9b2/5ebc46f7b8c49976b71c0bc5/haven-featured.png');
+.slide-cont:nth-of-type(4) {
+    background-image: url('https://cdn.discordapp.com/attachments/714113284823056475/855720172954451998/Arcanise.jpg');
 }
 
-.maps-cont:nth-of-type(6) /*   GANTI 6 jadi 5    */ {
-    background-image: url('https://media.contentapi.ea.com/content/dam/apex-legends/common/legacy/maps/apex-media-maps-kings-canyon-xl-l-m.jpg.adapt.1456w.jpg');
+.slide-cont:nth-of-type(5) {
+    background-image: url('../img/maps/maps_2_apexLegends-phaseRunner.jpg');
 }
 
-.maps-cont:nth-of-type(5) /*   GANTI 5 jadi 6    */ {
+.slide-cont:nth-of-type(6) {
     background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta9b912e1a1b59aa4/5ebc471cfa550001f72bcb13/ascent-featured.png');
 }
 

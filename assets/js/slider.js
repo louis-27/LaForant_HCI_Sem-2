@@ -1,41 +1,44 @@
-// (JQuery)
+// Image Slider (JQuery)
 $(function () {
-    let slides = $('.agent-image');
-    slides.hide();
+    let slide = $('.slide-cont');
+    slide.hide();
 
-    let agentDesc = $('.agents-desc');
-    agentDesc.hide();
+    let content = $('.content');
+    content.hide();
 
     let currId = 0;
     let minId = 0;
-    let maxId = slides.length - 1;
+    let maxId = slide.length - 1;
 
-    slides.eq(0).show();
-    agentDesc.eq(0).show();
+    slide.eq(0).show();
+    content.eq(0).show();
 
-    let rightArrow = $('#slide-right');
-    let leftArrow = $('#slide-left');
+    let rightArrow = $('#arrow-right');
+    let leftArrow = $('#arrow-left');
 
     rightArrow.click(() => {
-        slides.eq(currId).hide();
-        agentDesc.eq(currId).hide();
+        slide.eq(currId).hide();
+        content.eq(currId).hide();
+
         currId++;
         if (currId > maxId) {
             currId = minId;
         }
-        slides.eq(currId).show();
-        agentDesc.eq(currId).show();
+
+        slide.eq(currId).show();
+        content.eq(currId).show();
     })
 
     leftArrow.click(() => {
-        slides.eq(currId).hide();
-        agentDesc.eq(currId).hide();
+        slide.eq(currId).hide();
+        content.eq(currId).hide();
+
         currId--;
         if (currId < minId) {
             currId = maxId;
         }
-        slides.eq(currId).show();
-        agentDesc.eq(currId).show();
-    })
 
+        slide.eq(currId).show();
+        content.eq(currId).show();
+    })
 })

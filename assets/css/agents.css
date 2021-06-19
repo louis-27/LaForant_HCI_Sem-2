@@ -1,36 +1,119 @@
-/* Agents */
-.agents{
-    /* background-color: #DB4949; */
-    background-color: var(--laforant-red);
-    margin-top: 88px;
+/* Agents section */
+.agents {
+    position: relative;
 }
 
-.agents-slider{
+.slide-cont {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    height: 80vh;
 }
 
-.agents-desc{
-    display: flex;
-    margin-left: 50px;
-    flex-direction: column;
-    justify-content: end;
-    color: rgb(231, 231, 231);   
-    font-size: large;
+
+/* Arrows */
+.arrow {
+    background-color: var(--laforant-light);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
 }
 
-h1, h4{
-    margin-top: 0;
+.arrow:hover {
+    opacity: 90%;
+    transform: scale(1.5);
+    transition: ease-in-out 200ms;
 }
 
-i{
-    margin: 0 20px;
-    color: white;
-    font-size: 300%;
+#arrow-left {
+    left: 10px;
+
+    z-index: 99;
 }
 
-.agent-image{
-    width: 1063px;
-    height: 609px;
+#arrow-right {
+    right: 10px;
+}
+
+
+/* Content */
+.content {
+    background-color: var(--laforant-light);
+    color: #000;
+    padding: 15px;
+    width: 500px;
+
+    /* position: absolute;
+    bottom: 25px;
+    right: 25px; */
+}
+
+.content h1 {
+    font-size: 2em;
+}
+
+
+/* Agents image container */
+.slide-cont .agents-img {
+    width: 100%;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Agents image */
+.slide-cont .agents-img:nth-of-type(1) {
+    background-image: url('../img/agents/agents_2_AL_valkyrie.jpeg');
+}
+
+.slide-cont .agents-img:nth-of-type(2) {
+    background-image: url('../img/agents/agents_2_AL_valkyrie.jpeg');
+}
+
+.slide-cont .agents-img:nth-of-type(3) {
+    background-image: url('../img/agents/agents_3_AL_crypto.jpeg');
+}
+
+.slide-cont .agents-img:nth-of-type(4) {
+    background-image: url('https://www.pcgamesn.com/wp-content/uploads/2020/11/apex-legends-characters-fuse.jpg');
+}
+
+.slide-cont .agents-img:nth-of-type(5) {
+    background-image: url('https://www.pcgamesn.com/wp-content/uploads/2020/11/apex-legends-characters-fuse.jpg');
+}
+
+.slide-cont .agents-img:nth-of-type(6) {
+    background-image: url('https://www.pcgamesn.com/wp-content/uploads/2020/11/apex-legends-characters-fuse.jpg');
+}
+
+.slide-cont .agents-img:nth-of-type(7) {
+    background-image: url('https://www.pcgamesn.com/wp-content/uploads/2020/11/apex-legends-characters-fuse.jpg');
+}
+
+.slide-cont .agents-img:nth-of-type(8) {
+    background-image: url('https://www.pcgamesn.com/wp-content/uploads/2020/11/apex-legends-characters-fuse.jpg');
+}
+
+.slide-cont .agents-img:nth-of-type(9) {
+    background-image: url('https://www.pcgamesn.com/wp-content/uploads/2020/11/apex-legends-characters-fuse.jpg');
+}
+
+.slide-cont .agents-img:nth-of-type(10) {
+    background-image: url('https://www.pcgamesn.com/wp-content/uploads/2020/11/apex-legends-characters-fuse.jpg');
+}
+
+.slide-cont .agents-img:nth-of-type(11) {
+    background-image: url('https://www.pcgamesn.com/wp-content/uploads/2020/11/apex-legends-characters-fuse.jpg');
+}
+
+.slide-cont .agents-img:nth-of-type(12) {
+    background-image: url('https://www.pcgamesn.com/wp-content/uploads/2020/11/apex-legends-characters-fuse.jpg');
+}
+
+
+/* Media queries */
+@media (max-width: 960px) {
+    
 }

@@ -39,15 +39,17 @@ li {
     margin: auto;
 }
 
+
 /* Header (Navigation) */
 header {
     background: var(--laforant-black);
     text-transform: uppercase;
+
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 99;
+    z-index: 999;
 }
 
 nav {
@@ -139,6 +141,59 @@ nav {
     background-color: var(--laforant-red);
     border-color: var(--laforant-red);
 }
+
+
+/* Hero button */
+.hero-btn {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--laforant-black);
+    border: solid 2px var(--laforant-red);
+
+    margin-top: 35px;
+    padding: 15px 30px;
+}
+
+.hero-btn:hover {
+    background-color: var(--laforant-red);
+}
+
+
+/* Game Info about section */
+.game-info-title {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.game-info-title h1 {
+    text-transform: uppercase;
+    font-size: 6em;
+    margin: 5vh 0;
+}
+
+
+/* Ask User Section */
+.ask-user {
+    background: var(--laforant-black);
+    color: var(--laforant-light);
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.ask-user .hero-btn {
+    background-color: var(--laforant-red);
+    border: none;
+
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.ask-user .hero-btn:hover {
+    background-color: #f1465a;
+}
+
 
 /* Footer */
 footer {
