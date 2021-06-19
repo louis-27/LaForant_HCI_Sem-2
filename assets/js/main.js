@@ -13,64 +13,19 @@ let toggleNavDropdown = () => {
     }
 }
 
-// Image Slider (JQuery)
-$(function () {
-    let slides = $('.agent-image');
-    slides.hide();
-
-    let agentDesc = $('.agents-desc');
-    agentDesc.hide();
-
-    let currId = 0;
-    let minId = 0;
-    let maxId = slides.length - 1;
-
-    slides.eq(0).show();
-    agentDesc.eq(0).show();
-
-    let rightArrow = $('#slide-right');
-    let leftArrow = $('#slide-left');
-
-    rightArrow.click(() => {
-        slides.eq(currId).hide();
-        agentDesc.eq(currId).hide();
-        currId++;
-        if (currId > maxId) {
-            currId = minId;
-        }
-        slides.eq(currId).show();
-        agentDesc.eq(currId).show();
-    })
-
-    leftArrow.click(() => {
-        slides.eq(currId).hide();
-        agentDesc.eq(currId).hide();
-        currId--;
-        if (currId < minId) {
-            currId = maxId;
-        }
-        slides.eq(currId).show();
-        agentDesc.eq(currId).show();
-    })
-
-})
-
-// // Form validation
-// let validate = () => {
+// Form validation
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const passwordConfirmation = document.getElementById('confirm-password');
 const genderM = document.getElementById('male');
 const genderF = document.getElementById('female');
 const dob = document.getElementById('dob');
 const nationality = document.getElementById('country');
 const agreement = document.getElementById('agreement');
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
-
     validateInputs();
 })
 
@@ -78,7 +33,6 @@ let validateInputs = () => {
     const usernameValue = username.value;
     const emailValue = email.value;
     const passwordValue = password.value;
-    const passwordConfirmationValue = passwordConfirmation.value;
 
     // Username validation
     if (usernameValue === "") {
@@ -92,32 +46,31 @@ let validateInputs = () => {
     // Email validation
     if (emailValue === "") {
         setError(email, "Email cannot be empty");
+    } else if (emailValue.startsWith('.') || emailValue.startsWith('@')) {
+        setError(email, "Email must not start with '.' or '@'");
+    } else if (emailValue.indexOf('.') === emailValue.length - 1) {
+        setError(email, "Email must not end with '.'");
+    } else if (!(emailValue.endsWith('@gmail.com'))) {
+        setError(email, "Email must end with '@gmail.com'");
     } else {
-
+        setSuccess(email);
     }
 
     // Password validation
-    if (passwordValue) {
-
-    }
-    // Password confirmation validation
-    if (passwordConfirmationValue === passwordValue) {
-        setSuccess(passwordConfirmation);
+    if (passwordValue === "") {
+        setError(password, "Password required");
+    } else if (passwordValue.length < 8) {
+        setError(password, "Password's length must be equal or more than 8 characters");
     } else {
-        setError(passwordConfirmation, "Confirmation password must be identical with the password above");
+        setSuccess(password);
     }
-
-
 
     // Agreement
     if (!agreement.checked) {
-
+        setError(agreement, "You haven't checked the Agree button");
     }
-}
-// }
 
-let isEmail = (email) => {
-
+    alert(`Submitted!\n- ${usernameValue}\n- ${emailValue}\n- ${passwordValue}`);
 }
 
 let setError = (input, message) => {
@@ -125,7 +78,7 @@ let setError = (input, message) => {
     const errorMsg = inpSection.getElementsByClassName('error-msg');
 
     inpSection.className = 'input-section error';
-    errorMsg.innerText = message;
+    errorMsg.innerText = "lawak gaming";
 }
 
 let setSuccess = (input) => {

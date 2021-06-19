@@ -1,32 +1,87 @@
-/* Maps */
+/* Maps section */
 .maps {
-    background-color: var(--laforant-red);
-    margin-top: 88px;
+    margin-top: 100px;
+
+    position: relative;
 }
 
-.maps-slider{
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.maps-cont {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    
+    position: relative;
 }
 
-.maps-desc{
-    display: flex;
-    margin-left: 50px;
-    flex-direction: column;
-    justify-content: end;
-    color: rgb(231, 231, 231);   
-    font-size: large;
+
+/* Arrows */
+.arrow {
+    background-color: var(--laforant-light);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
 }
 
-i{
-    margin: 0 20px;
-    color: white;
-    font-size: 300%;
+.arrow:hover {
+    opacity: 90%;
+    transform: scale(1.5);
+    transition: ease-in-out 200ms;
 }
 
-.maps-image {
-    width: 1063px;
-    height: 609px;
-    background-color: rgb(236, 232, 225);
+#arrow-left {
+    left: 10px;
+
+    z-index: 999;
+}
+
+#arrow-right {
+    right: 10px;
+}
+
+
+/* Content */
+.content {
+    background-color: var(--laforant-light);
+    color: #000;
+    padding: 15px;
+    width: 500px;
+
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+
+/* Maps image */
+.maps-cont:nth-of-type(1) {
+    background-image: url('https://static.playoverwatch.com/img/pages/maps/images/kanezaka.jpg');
+}
+
+.maps-cont:nth-of-type(2) {
+    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltde02911a015d7ef9/5f80d2851f5f6d4173b4e49d/Icebox_transparentbg_for_Web.png');
+}
+
+.maps-cont:nth-of-type(3) {
+    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8538036a309525ae/5ebc470bfd85ad7411ce6b50/bind-featured.png');
+}
+
+.maps-cont:nth-of-type(4) {
+    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8afb5b8145f5e9b2/5ebc46f7b8c49976b71c0bc5/haven-featured.png');
+}
+
+.maps-cont:nth-of-type(6) /*   GANTI 6 jadi 5    */ {
+    background-image: url('https://media.contentapi.ea.com/content/dam/apex-legends/common/legacy/maps/apex-media-maps-kings-canyon-xl-l-m.jpg.adapt.1456w.jpg');
+}
+
+.maps-cont:nth-of-type(5) /*   GANTI 5 jadi 6    */ {
+    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta9b912e1a1b59aa4/5ebc471cfa550001f72bcb13/ascent-featured.png');
+}
+
+
+/* Media queries */
+@media (max-width: 960px) {
+    
 }

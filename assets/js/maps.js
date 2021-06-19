@@ -15,43 +15,45 @@ let toggleNavDropdown = () => {
 
 // Image Slider (JQuery)
 $(function () {
-
-    let maps = $('.maps-image');
+    let maps = $('.maps-cont');
     maps.hide();
 
-    let mapsDesc = $('.maps-desc');
-    mapsDesc.hide();
+    let content = $('.content');
+    content.hide();
 
     let currId = 0;
     let minId = 0;
     let maxId = maps.length - 1;
 
     maps.eq(0).show();
-    mapsDesc.eq(0).show();
+    content.eq(0).show();
 
-    let rightArrow = $('#slide-right');
-    let leftArrow = $('#slide-left');
+    let rightArrow = $('#arrow-right');
+    let leftArrow = $('#arrow-left');
 
     rightArrow.click(() => {
         maps.eq(currId).hide();
-        mapsDesc.eq(currId).hide();
+        content.eq(currId).hide();
+
         currId++;
         if (currId > maxId) {
             currId = minId;
         }
+
         maps.eq(currId).show();
-        mapsDesc.eq(currId).show();
+        content.eq(currId).show();
     })
 
     leftArrow.click(() => {
         maps.eq(currId).hide();
-        mapsDesc.eq(currId).hide();
+        content.eq(currId).hide();
+
         currId--;
         if (currId < minId) {
             currId = maxId;
         }
-        maps.eq(currId).show();
-        mapsDesc.eq(currId).show();
-    })
 
+        maps.eq(currId).show();
+        content.eq(currId).show();
+    })
 })
