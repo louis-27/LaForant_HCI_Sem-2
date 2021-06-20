@@ -34,7 +34,6 @@
         </nav>
     </header>
 
-
     Join the hype! Register yourself for this up and coming game, LaForant
     <!-- Pre-register -->
     <section class="pre-register">
@@ -43,7 +42,7 @@
             <form id="form" action="" method="POST">
                 <div class="input-section">
                     <label for="">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Type here">
+                    <input type="text" name="username" id="username">
                     <span class="error-msg"></span>
                 </div>
                 <div class="input-section">
@@ -58,20 +57,23 @@
                 </div>
                 <div class="input-section">
                     <label for="">Gender</label>
-                    <input type="radio" name="gender" id="male">
-                    <label for="">Male</label>
-                    <input type="radio" name="gender" id="female">
-                    <label for="">Female</label>
+                    <div id="gender">
+                        <input type="radio" name="gender" id="male">
+                        <label for="">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="">Female</label>
+                    </div>
                     <span class="error-msg"></span>
                 </div>
                 <div class="input-section">
                     <label for="">Date of Birth</label>
-                    <input type="date" name="dob" id="dob">
+                    <input type="date" name="dob" id="dob" required>
                     <span class="error-msg"></span>
                 </div>
                 <div class="input-section">
                     <label for="">Nationality</label>
-                    <select id="country" name="country" class="form-control">
+                    <select id="country" name="country">
+                        <option value="">-- Your country --</option>
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Åland Islands">Åland Islands</option>
                         <option value="Albania">Albania</option>
@@ -321,7 +323,7 @@
                 </div>
                 <div class="input-section">
                     <input type="checkbox" name="" id="agreement">
-                    <label for="">I agree to BLABLABLABLABLABLABLA</label>
+                    <label for="">I agree to the user terms of LaForant.</label>
                     <span class="error-msg"></span>
                 </div>
 

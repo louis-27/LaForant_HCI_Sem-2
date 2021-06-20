@@ -1,26 +1,26 @@
 /* Pre-Register */
 .pre-register {
-    margin-top: 200px;
-    margin-bottom: 100px;
-    /* background-color: aqua; */
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    font-size: 1.1em;
+    /* background-color: blue; */
+    background: url('../img/maps/maps_2_apexLegends-phaseRunner.jpg') center no-repeat;
 }
 
 .pre-register > div {
     /* width: 50%; */
     width: 500px;
     margin: auto;
-    /* background-color: grey; */
+    background-color: white;
+
+    padding: 20px 30px 20px 20px;
     /* opacity: 70%; */
 }
 
-.error-msg {
-    color: #e74c3c;
-    font-weight: 600;
-    visibility: hidden;
-}
 
 .input-section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 form label {
@@ -31,16 +31,62 @@ form label {
 .input-section input, .input-section select {
     display: block;
     width: 100%;
-    /* font-size: 1; */
-    padding: 10px;
+    padding: 10px 5px;
+
     outline: none;
-    border: 2px solid #bdbdbd;
+    border: 2px solid #f0f0f0;
     border-radius: 10px;
-    /* border: none; */
+
+    margin-bottom: 5px;
 }
 
+#form button {
+    width: 100%;
+    padding: 15px;
+
+    font-size: 1.2em;
+    color: white;
+    border: none;
+
+    background-color: var(--laforant-black);
+}
+
+#form button:hover {
+    background-color: var(--laforant-red);
+    cursor: pointer;
+}
+
+
+/* Gender section */
+#gender {
+    display: flex;
+}
+
+input[type=radio], input[type=checkbox] {
+    display: inline;
+    width: auto;
+}
+
+#gender label {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+
+/* Success */
 .input-section.success input {
-    border-color: #00ff00;
+    border-color: #20CC82;
+}
+
+
+/* Error */
+.error-msg {
+    color: #e74c3c;
+    font-weight: 600;
+    display: block;
+    /* margin-bottom: 30px; */
+
+    visibility: hidden;
 }
 
 .input-section.error input, .input-section.error select {
