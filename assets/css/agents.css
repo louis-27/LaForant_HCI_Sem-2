@@ -1,30 +1,3 @@
-/* Agents section */
-.agents {
-    position: relative;
-}
-
-.slide-cont {
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    
-    position: relative;
-}
-
-
-/* Content */
-.content {
-    background-color: var(--laforant-light);
-    color: #000;
-    padding: 15px;
-    width: 500px;
-
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-}
-
-
 /* Agents image */
 .slide-cont:nth-of-type(1) {
     background-image: url('../img/agents/agents_2_AL_valkyrie.jpeg');

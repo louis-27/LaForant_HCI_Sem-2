@@ -32,6 +32,10 @@
 
 
 /* Introduction */
+hr {
+    width: 80%;
+}
+
 .intro {
     margin: 80px auto;
 }
