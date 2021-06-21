@@ -166,16 +166,45 @@ nav {
 }
 
 
+/* Arrows */
+.arrow {
+    background-color: var(--laforant-light);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+}
+
+.arrow:hover {
+    opacity: 90%;
+    transform: scale(1.5);
+    transition: ease-in-out 200ms;
+}
+
+#arrow-left {
+    left: 10px;
+
+    z-index: 99;
+}
+
+#arrow-right {
+    right: 10px;
+}
+
+
 /* Game Info about section */
 .game-info-title {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 200px;
+    padding-bottom: 50px;
 }
 
 .game-info-title h1 {
     text-transform: uppercase;
     font-size: 6em;
-    margin: 5vh 0;
+    margin: 0;
 }
 
 

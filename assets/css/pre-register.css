@@ -102,7 +102,7 @@ input[type=radio], input[type=checkbox] {
     .pre-register {
         background: white;
 
-        padding-bottom: 0;
+        padding-bottom: 50px;
     }
 
     .pre-register > div {
