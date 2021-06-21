@@ -366,6 +366,13 @@ footer {
     }
 
 
+    /* Ask User Section */
+    .ask-user h2 {
+        width: 80%;
+        margin: auto;
+    }
+
+
     /* Footer */
     .footer-links {
         flex-direction: column;
