@@ -12,20 +12,32 @@
     <!-- Navigation -->
     <header>
         <nav class="container">
+            <div id="hamburger-logo">
+                <svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M4 8C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H4ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18Z" />
+                    </g>
+                </svg>
+            </div>
+
             <ul class="main-list">
                 <li class="logo-container">
-                    <img src="../assets/img/logo.svg" alt="" class="logo">
+                    <a href="./index.html"><img src="../assets/img/logo.svg" alt="" class="logo"></a>
                 </li>
-                <li class="nav-links"><a href="./index.html">Home</a></li>
-                <li class="nav-links dropdown">
-                    <div id="dropdown-hover">
-                        Game Info <img src="../assets/img/arrow-down.png" alt="" class="arrow-down"></div>
-                    <div class="dropdown-menu">
-                        <a href="./agents.html">Agents</a>
-                        <a href="./maps.html">Maps</a>
-                    </div>
-                </li>
-                <li class="nav-links"><a href="./support.html">Support</a></li>
+                <ul id="nav-menu">
+                    <li class="nav-links"><a href="./index.html">Home</a></li>
+                    <li class="nav-links dropdown">
+                        <div id="dropdown-hover">
+                            Game Info <img src="../assets/img/arrow-down.png" alt="" class="arrow-down">
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="./agents.html">Agents</a>
+                            <a href="./maps.html">Maps</a>
+                        </div>
+                    </li>
+                    <li class="nav-links"><a href="./support.html">Support</a></li>
+                </ul>
+
             </ul>
 
             <div class="pre-register-btn">
@@ -34,7 +46,6 @@
         </nav>
     </header>
 
-    Join the hype! Register yourself for this up and coming game, LaForant
     <!-- Pre-register -->
     <section class="pre-register">
         <div>
@@ -43,17 +54,17 @@
                 <div class="input-section">
                     <label for="">Username</label>
                     <input type="text" name="username" id="username">
-                    <span class="error-msg"></span>
+                    <span class="error-msg">Error message</span>
                 </div>
                 <div class="input-section">
                     <label for="">Email</label>
                     <input type="text" name="username" id="email">
-                    <span class="error-msg"></span>
+                    <span class="error-msg">Error message</span>
                 </div>
                 <div class="input-section">
                     <label for="">Password</label>
                     <input type="password" name="password" id="password">
-                    <span class="error-msg"></span>
+                    <span class="error-msg">Error message</span>
                 </div>
                 <div class="input-section">
                     <label for="">Gender</label>
@@ -63,12 +74,12 @@
                         <input type="radio" name="gender" id="female">
                         <label for="">Female</label>
                     </div>
-                    <span class="error-msg"></span>
+                    <span class="error-msg">Error message</span>
                 </div>
                 <div class="input-section">
                     <label for="">Date of Birth</label>
-                    <input type="date" name="dob" id="dob" required>
-                    <span class="error-msg"></span>
+                    <input type="text" name="dob" id="dob" placeholder="mm/dd/yyyy">
+                    <span class="error-msg">Error message</span>
                 </div>
                 <div class="input-section">
                     <label for="">Nationality</label>
@@ -319,12 +330,12 @@
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
-                    <span class="error-msg"></span>
+                    <span class="error-msg">Error message</span>
                 </div>
                 <div class="input-section">
                     <input type="checkbox" name="" id="agreement">
                     <label for="">I agree to the user terms of LaForant.</label>
-                    <span class="error-msg"></span>
+                    <span class="error-msg">Error message</span>
                 </div>
 
                 <button type="submit">Submit</button>

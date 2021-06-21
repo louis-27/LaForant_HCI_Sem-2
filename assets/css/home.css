@@ -72,17 +72,19 @@
 /* Agents */
 .agents {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 80vh;
+    align-items: center;
+
+    padding: 2em 0;
     background-color: var(--laforant-red);
 }
 
 .agents-background {
     display: flex;
     justify-content: center;
+
     padding: 15% 20%;
-    align-items: center;
+
     background-image: url('../img/agents-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,16 +93,17 @@
 .check-agents-btn {
     display: inline-block;
     padding: 25px 50px;
+
     background-color: rgba(255, 255, 255, 0.80);
-    background-size: cover;
-    color: black;
+    color: var(--laforant-black);
     font-weight: 500;
     font-size: large;
+
     align-self: center;
 }
 
 .check-agents-btn:hover {
-    background-color: #fff;
+    background-color: var(--laforant-light);
 }
 
 
@@ -109,16 +112,17 @@
     background-image: url('../img/icebox-map.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
     justify-items: flex-start;
 }
 
 .map-description {
     width: 650px;
     height: 100%;
+    padding: 2em 0 200px 5%;
+
     box-shadow: inset 650px 0 80px 10px var(--laforant-light);
-    padding: 2em 0 2em 5%;
     font-size: large;
+
     display: flex;
     flex-direction: column;
 }
@@ -154,9 +158,89 @@
 
 /* Media Queries */
 @media (max-width: 960px) {
-    
+    /* Hero */
+    .hero .logo {
+        width: 85vw;
+    }
+
+
+    /* Intro */
+    .intro-desc > p {
+        width: 70%;
+    }
 }
 
 @media (max-width: 800px) {
-    
+    /* Intro */
+    .intro-desc > p {
+        width: 80%;
+    }
+
+
+    /* Maps */
+    .maps {
+        height: 100%;
+        background: none;
+    }
+
+    .map-description {
+        width: 100%;
+        padding: 0 0 3em 0;
+
+        box-shadow: none;
+        background-color: var(--laforant-light);
+
+        text-align: center;
+    }
+
+    .map-description p {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .view-maps-btn {
+        margin-top: 35px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 570px) {
+    /* Hero */
+    .hero {
+        height: 60vh;
+
+        position: relative;
+    }
+
+
+    .heading-text {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Intro */
+    .intro-desc > p {
+        font-size: 1em;
+    }
+
+    .heading-text {
+        font-size: 50px;
+    }
+
+
+    /* Agents */
+    .check-agents-btn {
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* Agents */
+    .agents-background {
+        padding: 10% 15%;
+    }
+    .check-agents-btn {
+        padding: 10px 25x;
+    }
 }

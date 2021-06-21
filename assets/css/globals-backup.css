@@ -59,15 +59,16 @@ nav {
     font-weight: 600;
 }
 
-#hamburger-logo {
+.hamburger-logo {
     display: none;
-    width: 24px;
-    padding-right: 20px;
-    cursor: pointer;
 }
 
-#hamburger-logo > svg {
+.hamburger-logo > svg {
     fill: #fff;
+}
+
+.logo {
+    width: 200px;
 }
 
 .main-list {
@@ -75,10 +76,6 @@ nav {
     align-items: center;
     padding-left: 0;
     margin: 0;
-}
-
-.logo {
-    width: 200px;
 }
 
 .logo-container {
@@ -105,7 +102,6 @@ nav {
 
 .dropdown .dropdown-menu {
    display: none;
-
    position: absolute;
 }
 
@@ -117,9 +113,8 @@ nav {
 .dropdown:hover .dropdown-menu > a {
     display: inline-block;
     width: 100%;
-    padding: 15px 25px;
-
     background-color: var(--laforant-black);
+    padding: 15px 25px;
     border: none;
 }
 
@@ -269,43 +264,14 @@ footer {
 }
 
 /* Media Queries */
-@media (min-width: 960px) {
-    #nav-menu {
-        display: flex !important;
-    }
-}
-
 @media (max-width: 960px) {
     /* Navigation */
-    #hamburger-logo {
-        display: block;
+    .hamburger-logo {
+        display: flex;
     }
 
     #nav-menu {
-        flex-direction: column;
-        width: 50%;
-
-        position: fixed;
-        left: 0;
-        top: 70px;
-        bottom: 0;
-        background-color: var(--laforant-black);
-
         display: none;
-    }
-
-    .main-list .nav-links a, .dropdown > #dropdown-hover {
-        display: block;
-        width: 100%;
-        padding: 20px 0;
-    }
-
-    .dropdown:hover .dropdown-menu > a {
-        border-left: 2px solid var(--laforant-red);
-    }
-
-    .dropdown:hover .dropdown-menu > a:nth-of-type(2) {
-        border-bottom: 2px solid var(--laforant-red);
     }
 
     .logo-container {
@@ -318,16 +284,8 @@ footer {
 
     .pre-register-btn a {
         padding: 10px 15px;
-        font-size: 0.9em;
+        /* font-size: 0.8em; */
     }
-
-
-    /* Hero */
-    .hero-btn {
-        margin-top: 25px;
-        padding: 15px 20px;
-    }
-
 
     /* Footer */
     .footer-inner {
@@ -341,33 +299,5 @@ footer {
 
     .socmed {
         padding: 0;
-    }
-}
-
-@media (max-width: 700px) {
-    /* Hero */
-    .hero-btn {
-        margin-top: 15px;
-    }
-}
-
-@media (max-width: 500px) {
-    /* Navigation */
-    .pre-register-btn a {
-        display: none;
-    }
-}
-
-@media (max-width: 375px) {
-    /* Navigation */
-    #nav-menu {
-        width: 100%;
-    }
-
-
-    /* Footer */
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
     }
 }

@@ -4,23 +4,22 @@
     padding-bottom: 50px;
 
     font-size: 1.1em;
-    /* background-color: blue; */
-    background: url('../img/maps/maps_2_apexLegends-phaseRunner.jpg') center no-repeat;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/maps/maps_2_apexLegends-phaseRunner.jpg') center no-repeat;
+    background-size: cover;
 }
 
 .pre-register > div {
-    /* width: 50%; */
     width: 500px;
     margin: auto;
     background-color: white;
 
     padding: 20px 30px 20px 20px;
-    /* opacity: 70%; */
 }
 
 
 .input-section {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 form label {
@@ -43,6 +42,7 @@ form label {
 #form button {
     width: 100%;
     padding: 15px;
+    margin-top: 20px;
 
     font-size: 1.2em;
     color: white;
@@ -83,8 +83,8 @@ input[type=radio], input[type=checkbox] {
 .error-msg {
     color: #e74c3c;
     font-weight: 600;
+    font-size: 0.9em;
     display: block;
-    /* margin-bottom: 30px; */
 
     visibility: hidden;
 }
@@ -95,4 +95,19 @@ input[type=radio], input[type=checkbox] {
 
 .input-section.error .error-msg {
     visibility: visible;
+}
+
+@media (max-width: 570px) {
+    /* Form */
+    .pre-register {
+        background: white;
+
+        padding-bottom: 0;
+    }
+
+    .pre-register > div {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

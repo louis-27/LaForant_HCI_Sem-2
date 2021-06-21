@@ -20,6 +20,7 @@ let validateInputs = () => {
     const emailValue = email.value;
     const passwordValue = password.value;
     const dateValue = dob.value;
+    const validDate = Date.parse(dateValue);
     let successCount = 0;
 
     // Username
@@ -65,12 +66,14 @@ let validateInputs = () => {
     }
 
     // Date
-    // if (!dob.checked) {
-    //     setError(dob, "You haven't filled your Date of Birth");
-    // } else if (dateValue !== "") {
-    //     removeError(dob);
-    //     successCount += 1;
-    // }
+    if (dateValue === "") {
+        setError(dob, "You haven't filled your Date of Birth");
+    } else if (isNaN(validDate)) {
+        setError(dob, "Invalid date format");
+    } else {
+        removeError(dob);
+        successCount += 1;
+    }
 
     // Nationality
     if (nationality.value === "") {
@@ -90,7 +93,7 @@ let validateInputs = () => {
 
 
     // Pre-Registration Success
-    if (successCount === 6) {
+    if (successCount === 7) {
         alert("You've successfully registered for LaForant! You'll be notified when the next beta test is scheduled.");
     }
 }

@@ -12,24 +12,35 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
     <header>
         <nav class="container">
+            <div id="hamburger-logo">
+                <svg viewBox="0 0 24 24">
+                    <g>
+                        <path d="M4 8C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H4ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18Z" />
+                    </g>
+                </svg>
+            </div>
+
             <ul class="main-list">
                 <li class="logo-container">
                     <a href="./index.html"><img src="../assets/img/logo.svg" alt="" class="logo"></a>
                 </li>
-                <li class="nav-links"><a href="./index.html">Home</a></li>
-                <li class="nav-links dropdown">
-                    <div id="dropdown-hover">
-                        Game Info <img src="../assets/img/arrow-down.png" alt="" class="arrow-down"></div>
-                    <div class="dropdown-menu">
-                        <a href="#">Agents</a>
-                        <a href="./maps.html">Maps</a>
-                    </div>
-                </li>
-                <li class="nav-links"><a href="./support.html">Support</a></li>
+                <ul id="nav-menu">
+                    <li class="nav-links"><a href="./index.html">Home</a></li>
+                    <li class="nav-links dropdown">
+                        <div id="dropdown-hover">
+                            Game Info <img src="../assets/img/arrow-down.png" alt="" class="arrow-down">
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="#">Agents</a>
+                            <a href="./maps.html">Maps</a>
+                        </div>
+                    </li>
+                    <li class="nav-links"><a href="./support.html">Support</a></li>
+                </ul>
+
             </ul>
 
             <div class="pre-register-btn">
@@ -138,7 +149,7 @@
 
     <!-- Ask User -->
     <section class="ask-user">
-        <h2>Interested? Pre Register Now to be notified when LaForant is released.</h1>
+        <h2>Interested? Pre-Register Now to be notified when LaForant is released.</h1>
         <a href="./pre-register.html" class="hero-btn">Pre-Register Now</a>
     </section>
 
