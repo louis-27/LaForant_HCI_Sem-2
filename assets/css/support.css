@@ -46,11 +46,6 @@
     #spec-cont h1 {
         font-size: 2em;
     }
-
-    #spec-cont > div {
-        /* padding-left: 20px; */
-        /* width: 80%; */
-    }
 }
 
 @media (max-width: 500px) {
