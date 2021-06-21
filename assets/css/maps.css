@@ -7,7 +7,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80vh;
+    height: 600px;
     
     position: relative;
 }
@@ -52,31 +52,87 @@
 
 /* Maps image */
 .slide-cont:nth-of-type(1) {
-    background-image: url('../img/maps/maps_1_apexLegends-kingsCanyon.jpg');
+    background-image: url('../img/maps/kanezaka.jpeg');
 }
 
 .slide-cont:nth-of-type(2) {
-    background-image: url('../img/maps/maps_3_overwatch-kanezaka.jpeg');
+    background-image: url('../img/maps/queens-canyon.jpg');
 }
 
 .slide-cont:nth-of-type(3) {
-    background-image: url('../img/maps/maps_4_overwatch-volskayaIndustries.jpeg');
+    background-image: url('../img/maps/phase-runner.jpg');
 }
 
 .slide-cont:nth-of-type(4) {
-    background-image: url('https://cdn.discordapp.com/attachments/714113284823056475/855720172954451998/Arcanise.jpg');
+    background-image: url('../img/maps/olympus.jpg');
 }
 
 .slide-cont:nth-of-type(5) {
-    background-image: url('../img/maps/maps_2_apexLegends-phaseRunner.jpg');
+    background-image: url('../img/maps/party-crasher.jpg');
 }
 
 .slide-cont:nth-of-type(6) {
-    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blta9b912e1a1b59aa4/5ebc471cfa550001f72bcb13/ascent-featured.png');
+    background-image: url('../img/maps/worlds-edge.jpg');
 }
 
 
 /* Media queries */
-@media (max-width: 960px) {
-    
+@media (max-width: 750px) {
+    .content {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .slide-cont {
+        height: 500px;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+
+        background-color: rgb(0, 0, 0, 0.6);
+        color: var(--laforant-light);
+    }
+
+    .content > * {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .slide-cont {
+        height: 500px;
+    }
+
+    .content > * {
+        width: 85%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .slide-cont {
+        height: 400px;
+    }
+
+    .content {
+        height: 100%;
+        padding: 0;
+
+        background-color: rgb(0, 0, 0, 0.5);
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    .content > * {
+        width: 50%;
+        margin: 10px auto;
+    }
 }
